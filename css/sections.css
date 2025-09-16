@@ -1,0 +1,78 @@
+.skills-grid, .certifications-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.skill-card, .certification-card, .project-card, .experience-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover, .certification-card:hover, .project-card:hover, .experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card i, .certification-card i, .project-card i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.experience-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.date {
+    color: #3498db;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #e1f0fa;
+    color: #3498db;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.veille-content {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-preview {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section:nth-child(even) {
+    background-color: #f8f9fa;
+}
