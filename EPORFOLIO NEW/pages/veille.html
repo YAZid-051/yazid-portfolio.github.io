@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Yazid Brahmi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .veille-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .veille-card:hover { transform: translateY(-5px); }
+
+        .source-list { list-style: none; padding: 0; }
+        .source-list li { margin-bottom: 15px; display:flex; align-items:center; }
+        .source-list i { margin-right: 15px; color:#3498db; }
+
+        .tech-tags { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+        .tag { background:#e1f0fa; color:#3498db; padding:8px 15px; border-radius:20px; }
+
+        .veille-content { display:grid; grid-template-columns:1fr; gap:30px; }
+        .resource-link { color:#3498db; text-decoration:none; display:inline-flex; align-items:center; margin-top:10px; }
+        .resource-link i { margin-right:8px; }
+        .resource-link:hover { text-decoration:underline; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Yazid Brahmi</a>
+            <div class="nav-links">
+                <a href="../index.html">Accueil</a>
+                <a href="competences.html">Compétences</a>
+                <a href="attestations.html">Attestations</a>
+                <a href="experiences.html">Expériences</a>
+                <a href="formations.html">Formations</a>
+                <a href="projet.html">Projets</a>
+                <a href="veille.html">Veille</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Veille Technologique</h2>
+                <p>Restez informé des dernières avancées technologiques</p>
+            </div>
+
+            <!-- Section principale de veille : articles sélectionnés -->
+            <div class="veille-grid" style="margin-bottom:20px;">
+                <article class="veille-card">
+                    <h3>AI-powered phishing: comment les modèles génératifs augmentent les attaques ciblées</h3>
+                    <div class="meta">20 octobre 2025 — Source : The Hacker News (<a class="source" href="https://thehackernews.com" target="_blank" rel="noopener">thehackernews.com</a>)</div>
+                    <p class="summary">Résumé : Cet article décrit l'utilisation de modèles génératifs pour créer des e‑mails de phishing hautement personnalisés et convaincants. Les attaquants combinent données publiques et prompts sophistiqués pour rédiger des messages qui contournent les filtres classiques et augmentent les taux de compromission. Le texte détaille des cas réels et des recommandations pour la défense (filtrage basé sur le comportement, authentification forte).</p>
+                </article>
+
+                <article class="veille-card">
+                    <h3>Génération de code malveillant : les LLM facilitent la création de malwares polymorphes</h3>
+                    <div class="meta">30 septembre 2025 — Source : Wired (<a class="source" href="https://www.wired.com" target="_blank" rel="noopener">wired.com</a>)</div>
+                    <p class="summary">Résumé : En se servant d'IA générative, des acteurs malveillants peuvent produire des variantes de code qui échappent aux signatures traditionnelles. L'article explique comment l'automatisation accélère l'obfuscation et présente des exemples d'outils qui transforment automatiquement le code pour éviter la détection.</p>
+                </article>
+
+                <article class="veille-card">
+                    <h3>Automatisation de la découverte de vulnérabilités grâce aux modèles d’IA</h3>
+                    <div class="meta">12 août 2025 — Source : MIT Technology Review (<a class="source" href="https://www.technologyreview.com" target="_blank" rel="noopener">technologyreview.com</a>)</div>
+                    <p class="summary">Résumé : Les modèles d'IA sont intégrés dans des chaînes d'analyse de code et des outils de fuzzing pour identifier plus rapidement des failles jusque‑là difficiles à détecter. L'article analyse les bénéfices pour la sécurité défensive mais alerte sur la dualité d'usage : ces mêmes techniques peuvent être détournées par des attaquants.</p>
+                </article>
+
+                <article class="veille-card">
+                    <h3>Deepfakes vocaux et ingénierie sociale : appels convaincants à l’aide de clonage vocal</h3>
+                    <div class="meta">5 juin 2025 — Source : Microsoft Security Blog (<a class="source" href="https://www.microsoft.com/security/blog" target="_blank" rel="noopener">microsoft.com/security/blog</a>)</div>
+                    <p class="summary">Résumé : Exemples documentés d'attaques utilisant des voix clonées pour convaincre des employés d'exécuter des actions sensibles (transferts, divulgation d'informations). Le billet décrit méthodes de prévention (vérification multi‑facteurs pour transactions sensibles, formation, procédures de confirmation indépendantes).</p>
+                </article>
+
+                <article class="veille-card">
+                    <h3>Tactiques d’évasion assistées par IA contre les solutions EDR/AV</h3>
+                    <div class="meta">22 mars 2025 — Source : Malwarebytes Labs (<a class="source" href="https://blog.malwarebytes.com" target="_blank" rel="noopener">blog.malwarebytes.com</a>)</div>
+                    <p class="summary">Résumé : Les chercheurs montrent comment l'IA permet d'ajuster dynamiquement le comportement des malwares pour éviter les heuristiques et apprentissages automatiques des outils de détection. Recommandations incluses : analyse comportementale continue, sandboxing avancé et corrélation télémétrique.</p>
+                </article>
+
+                <article class="veille-card">
+                    <h3>Réponse coordonnée : stratégies de régulation et d’action face aux menaces IA</h3>
+                    <div class="meta">15 novembre 2024 — Source : CISA / Publications techniques (<a class="source" href="https://www.cisa.gov" target="_blank" rel="noopener">cisa.gov</a>)</div>
+                    <p class="summary">Résumé : Rapport de synthèse présentant les actions recommandées pour les organisations et autorités (partage de menaces, normes pour l'utilisation responsable de l'IA, renforcement des contrôles d'accès et traçabilité). Bien que publié en 2024, il contient des lignes directrices encore pertinentes face aux évolutions de 2025.</p>
+                </article>
+            </div>
+
+            <!-- Cartes de veille supprimées selon demande de l'utilisateur -->
+
+            <!-- Bloc téléchargement supprimé de la page Veille sur demande de l'utilisateur -->
+        </div>
+    </section>
+</body>
+</html>
