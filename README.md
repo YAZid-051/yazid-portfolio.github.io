@@ -8,8 +8,8 @@ Le site présente :
 - Mes compétences
 - Mes expériences
 - Mes formations
-- Mes réalisations
-- Mes certifications
+-- Mes projets
+- Mes attestations
 - Ma veille
 - Un formulaire de contact
 
@@ -53,12 +53,12 @@ Ce dossier contient les documents complémentaires et ressources du portfolio
 
 #### pages/
 Pages principales du portfolio :
-- `certifications.html` : Liste et détails de mes certifications professionnelles
+- `attestations.html` : Liste et détails de mes attestations professionnelles
 - `competences.html` : Présentation de mes compétences techniques et professionnelles
 - `contact.html` : Formulaire et informations de contact
 - `experiences.html` : Parcours professionnel et expériences
 - `formations.html` : Cursus académique et formations suivies
-- `realisations.html` : Portfolio de projets et réalisations
+-- `projet.html` : Portfolio de projets et réalisations
 - `veille.html` : Veille technologique et professionnelle
 
 ---
