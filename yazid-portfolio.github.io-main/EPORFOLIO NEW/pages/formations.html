@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - Yazid Brahmi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .formation-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .formation-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .formation-date {
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .formation-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .formation-school {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .formation-description {
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        .formation-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Yazid Brahmi</a>
+            <div class="nav-links">
+                <a href="../index.html">Accueil</a>
+                <a href="competences.html">Compétences</a>
+                <a href="attestations.html">Attestations</a>
+                <a href="experiences.html">Expériences</a>
+                <a href="formations.html">Formations</a>
+                <a href="projet.html">Projets</a>
+                <a href="veille.html">Veille</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes Formations</h2>
+            </div>
+            
+            <div class="formations-container">
+                <div class="formation-card">
+                    <div class="formation-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="formation-date">2024-2025</div>
+                    <h3 class="formation-title">BTS Services Informatiques aux Organisations (SIO)</h3>
+                    <h4 class="formation-school">Option SISR (Solutions d'Infrastructures, Systèmes et Réseaux)</h4>
+                    <p class="formation-description">
+                        Formation approfondie en administration système et réseau, sécurité informatique, 
+                        et gestion d'infrastructure. Spécialisation dans la conception et la maintenance 
+                        des solutions d'infrastructure.
+                    </p>
+                </div>
+
+                <div class="formation-card">
+                    <div class="formation-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="formation-date">2022-2023</div>
+                    <h3 class="formation-title">Baccalauréat Technologique STMG</h3>
+                    <h4 class="formation-school">Sciences et Technologies du Management et de la Gestion</h4>
+                    <p class="formation-description">
+                        Formation générale en management, gestion et technologies numériques. 
+                        Acquisition des fondamentaux en économie, droit et management des organisations.
+                    </p>
+                </div>
+                <!-- Bloc : Tableau de synthèse (ajouté) -->
+                <div class="formation-card" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+                    <div>
+                        <h3 class="formation-title" style="margin:0;">Tableau de synthèse</h3>
+                        <p class="formation-description" style="margin:6px 0 0 0; color:#666;">Télécharge le tableau de synthèse (Épreuve E4 - BTS SIO).</p>
+                    </div>
+                    <div>
+                        <a class="btn" href="../documents/Tableau de synthese 2025.xlsx" target="_blank" rel="noopener" style="background:linear-gradient(90deg,var(--primary),var(--accent));">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

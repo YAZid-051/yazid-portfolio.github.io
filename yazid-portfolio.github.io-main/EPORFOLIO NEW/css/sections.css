@@ -1,0 +1,24 @@
+.skills-grid, .attestations-grid, .projects-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px;margin:0 auto;max-width:1100px;
+}
+
+.skill-card,.attestation-card,.project-card,.experience-card{
+    background:var(--surface);padding:22px;border-radius:12px;box-shadow:0 18px 40px rgba(8,18,40,0.04);text-align:center;transition:transform .22s,box-shadow .22s
+}
+.skill-card:hover,.attestation-card:hover,.project-card:hover,.experience-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(8,18,40,0.06)}
+
+.skill-card i,.certification-card i,.project-card i{font-size:2.3rem;color:var(--primary);margin-bottom:14px}
+
+.experience-card{max-width:760px;margin:0 auto}
+.date{color:var(--primary);font-weight:700;margin:10px 0}
+
+.tag{display:inline-block;padding:6px 14px;background:rgba(20,184,166,0.1);color:var(--accent);border-radius:20px;margin:6px;font-size:0.9rem}
+
+.text-center{text-align:center}
+
+.veille-content{background:var(--surface);padding:30px;border-radius:12px;box-shadow:0 18px 40px rgba(8,18,40,0.04);text-align:center;max-width:820px;margin:0 auto}
+
+.contact-preview{background:var(--surface);padding:28px;border-radius:12px;box-shadow:0 18px 40px rgba(8,18,40,0.04);max-width:640px;margin:0 auto}
+
+.section{padding:70px 0}
+.section:nth-child(even){background:linear-gradient(180deg,#f7fafc,#f0f6fb)}
